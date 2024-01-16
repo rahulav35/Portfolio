@@ -1,3 +1,17 @@
+// import swiper react components
+import { Swiper,SwiperSlide } from "swiper/react";
+
+
+
+// import swiper slides
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+
+
+
 // icons
 import {
   RxCrop,
@@ -5,10 +19,16 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
+  RxArrowTopRight
 } from "react-icons/rx";
 
 
-// data
+// import required modules
+import { FreeMode, Pagination } from "swiper";
+
+
+
+// service data
 const serviceData = [
   {
     icon: <RxCrop />,

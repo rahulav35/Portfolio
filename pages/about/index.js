@@ -110,7 +110,7 @@ const About = () => {
       <Circles />
       {/* avatar img */}
 
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -118,23 +118,46 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar /> 
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center xl:mt-16">
-          <h2 className="h2">
+        <div className="flex-1 flex flex-col justify-center xl:mt-16 -mt-2">
+          <motion.h2
+
+variants={fadeIn("right", 0.2)}
+initial="hidden"
+animate="show"
+exit="hidden"
+          
+          className="h2">
             {" "}
-            Captivating <span className="text-accent">stories</span> birth
+            Captivating <span className="text-accent">stories</span> birth 
             magnificent designs.
-          </h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 box-border">
+          </motion.h2>
+          <motion.p
+
+variants={fadeIn("right", 0.4)}
+initial="hidden"
+animate="show"
+exit="hidden"
+          
+          className="max-w-[500px] mx-auto xl:mx-0 mb-2  xl:mb-12 ">
             hoqeopjf nhefke njflmdl nllbj, nhijwffwf.
-            nfiwhffknff,ugfhwfijhwfjokf. hignvknkfwihfiwfwf,buhfhwifhw hguhfe
+            nfiwfwf,buhfhwifhw hguhfe
             gydywow gcguhfjwf guhikv hihiwfhfkwfiwhf buwyfjoegofnwf jhifhwkfnwkf
-          </p>
+          </motion.p>
           {/* counters */}
-          <div>
-            <div>
+          <motion.div 
+
+variants={fadeIn("right", 0.6)}
+initial="hidden"
+animate="show"
+exit="hidden"
+          
+          
+          
+          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 ">
+            <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
@@ -184,12 +207,21 @@ const About = () => {
 
               
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* info */}
 
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] xl:mt-8">
+        <motion.div 
+
+variants={fadeIn("left", 0.4)}
+initial="hidden"
+animate="show"
+exit="hidden"
+        
+        
+        
+        className="flex flex-col w-full xl:max-w-[48%] h-[480px] xl:mt-8 mt-2">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -209,7 +241,7 @@ const About = () => {
             })}
           </div>
 
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start box-border">
+          <div className="  py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start box-border">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -231,12 +263,12 @@ const About = () => {
                     })}
                   </div>
 
-                  <div>{item.title}</div>
+                  {/* <div>{item.title}</div> */}
                 </div>
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
