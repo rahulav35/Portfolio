@@ -20,27 +20,27 @@ import {
 
 //  data
 const aboutData  = [  
-  {
-    title: "skills",
-    info: [
-      { 
-        title: "Web Development",
-        icons: [
-          <FaHtml5 key={index} />,
-          <FaCss3 key={index}  />,
-          <FaJs key={index}  />,
-          <FaReact key={index} />,
-          <SiNextdotjs  key={index} />,
-          <SiFramer key={index}  />,
-          <FaWordpress key={index} />,
-        ],
-      },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma key={index}  />, <SiAdobexd key={index}  />, <SiAdobephotoshop key={index}  />],
-      },
-    ],
-  },
+  // {
+  //   title: "skills",
+  //   info: [
+  //     { 
+  //       title: "Web Development",
+  //       icons: [
+  //         <FaHtml5 />,
+  //         <FaCss3 />,
+  //         <FaJs />,
+  //         <FaReact />,
+  //         <SiNextdotjs />,
+  //         <SiFramer />,
+  //         <FaWordpress />,
+  //       ],
+  //     },
+  //     {
+  //       title: "UI/UX Design",
+  //       icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+  //     },
+  //   ],
+  // },
   {
     title: "awards",
     info: [
